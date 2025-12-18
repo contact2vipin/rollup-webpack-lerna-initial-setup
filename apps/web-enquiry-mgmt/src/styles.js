@@ -1,0 +1,1 @@
+import '@vk/react-ui-kit/lib/esm/style/index.css';

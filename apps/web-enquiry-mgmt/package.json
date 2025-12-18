@@ -1,0 +1,27 @@
+{
+  "name": "@vk/web-enquiry-mgmt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "VIPIN KUMAR",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "^22.21.0 || ^24.11.1"
+  },
+  "scripts": {
+    "start": "run-p start:*",
+    "start:compile": "cross-env NODE_OPTIONS=--max-old-space-size=6114 NODE_ENV=development webpack-dev-server --progress --mode=development",
+    "start:type": "yarn build:type -w",
+    "build": "run-p build:*",
+    "build:compile": "cross-env NODE_OPTIONS=--max-old-space-size=6114 NODE_ENV=production webpack-dev-server --progress --mode=production",
+    "build:type": "tsc"
+  },
+  "dependencies": {
+    "@vk/react-ui-kit": "^1.0.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
+}

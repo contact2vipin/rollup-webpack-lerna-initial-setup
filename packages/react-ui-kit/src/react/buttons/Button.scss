@@ -1,0 +1,11 @@
+.button {
+    &.primary {
+        background-color: green;
+        font-weight: bold;
+    }
+
+    &.secondary {
+        background-color: skyblue;
+        font-weight: bold;
+    }
+}

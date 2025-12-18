@@ -1,0 +1,49 @@
+{
+  "name": "@vk/react-ui-kit",
+  "version": "1.0.0",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/types/index.d.ts",
+  "author": "VIPIN KUMAR",
+  "license": "MIT",
+  "engines": {
+    "node": "^22.21.0 || ^24.11.1"
+  },
+  "scripts": {
+    "build": "run-p build:*",
+    "build:compile": "rollup -c",
+    "build:type": "tsc"
+  },
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "@rollup/plugin-babel": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "globby": "^16.0.0",
+    "p-queue": "^9.0.1",
+    "postcss": "^8.5.6",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "rollup": "^4.53.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.95.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1"
+  },
+  "peerDependencies": {
+    "classnames": "^2.5.1",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  }
+}
