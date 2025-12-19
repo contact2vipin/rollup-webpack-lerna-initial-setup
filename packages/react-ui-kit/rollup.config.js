@@ -1,6 +1,6 @@
 const path = require('path');
 const crypto = require('crypto');
-const slash = require('slash').default;
+const slash = require('slash');
 const globby = require('globby');
 const babel = require('@rollup/plugin-babel');
 const resolve = require('@rollup/plugin-node-resolve');

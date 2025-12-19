@@ -1,5 +1,4 @@
 const path = require('path');
-const crypto = require('crypto');
 const fs = require('fs');
 const pkg = require(path.resolve(process.cwd(), 'package.json'));
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -36,8 +35,8 @@ const entryConfig = {
 const outputConfig = {
     config: (customConfig) => ({
         path: path.resolve(__dirname, 'dist'),
-        filename: 'wem-[name].js?v=[hash]',
-        chunkFilename: ifProd('chunks/[id].[name].js?v=[hash]', 'wem-[name].js?v=[hash]'),
+        filename: 'wem-[name].[chunkhash].js?v=[chunkhash]',
+        chunkFilename: ifProd('chunks/[id].[name].[chunkhash].js?v=[chunkhash]', 'wem-[name].[chunkhash].js?v=[chunkhash]'),
         clean: true, // This clears the directory before each build
     }),
     validator: (config) => {
@@ -67,12 +66,10 @@ const optimizationConfig = {
         splitChunks: {
             chunks: 'all',
             maxAsyncRequests: Infinity,
-            maxInitialRequests: Infinity,
-        },
+            maxInitialRequests: Infinity
+        }
     }),
-    validator: (config) => {
-
-    }
+    validator: (config) => {}
 }
 
 const moduleConfig = {
@@ -132,7 +129,7 @@ const moduleConfig = {
                             modules: {
                                 namedExport: false // When namedExport is set to false, it means that when you import a CSS Module in your JavaScript, it will be imported as a default export
                             },
-                            
+
                         },
                     },
                     'postcss-loader',
@@ -141,9 +138,7 @@ const moduleConfig = {
             }
         ]
     }),
-    validator: (config) => {
-
-    }
+    validator: (config) => {}
 }
 
 const pluginsConfig = {
@@ -155,8 +150,8 @@ const pluginsConfig = {
             chunksSortMode: 'none',
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].css',
-            chunkFilename: '[id].css',
+            filename: '[name].[contenthash].css',
+            chunkFilename: '[id].[contenthash].css',
         })
     ],
     validator: (config) => {
@@ -167,12 +162,8 @@ const pluginsConfig = {
 }
 
 const statsConfig = {
-    config: (customConfig) => ({
-        
-    }),
-    validator: (config) => {
-
-    }
+    config: (customConfig) => ({}),
+    validator: (config) => {}
 }
 
 const config = (customConfig, options = {}) => ({
