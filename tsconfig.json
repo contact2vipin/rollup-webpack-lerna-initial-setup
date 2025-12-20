@@ -27,7 +27,8 @@
     "allowUnreachableCode": false /* Disable error reporting for unreachable code. */,
     "baseUrl": "./",
     "paths": {
-      "@vk/react-ui-kit": ["packages/react-ui-kit/src"],
+      "@vk/react-ui-kit/*": ["packages/react-ui-kit/*"],
+      "@vk/icons/*": ["packages/icons/*"],
       //"@vk/react-ui-kit/*": ["packages/react-ui-kit/*"],
     }
     /* Completeness */

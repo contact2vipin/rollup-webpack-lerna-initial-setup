@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@vk/react-ui-kit": "^1.0.0",
+    "@vk/icons": "^1.0.0",
     "react": "^19.2.1",
     "react-dom": "^19.2.1"
   },

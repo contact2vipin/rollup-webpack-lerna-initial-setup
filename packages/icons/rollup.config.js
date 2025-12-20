@@ -20,6 +20,7 @@ module.exports = Object.assign(baseConfig,
                 preserveModules: true,
                 preserveModulesRoot: 'src'
             },
-        ]
+        ],
+
     }
 );
