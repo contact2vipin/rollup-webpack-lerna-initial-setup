@@ -4,11 +4,14 @@ import { CheckIcon, CloseIcon } from '@vk/icons';
 import styles from './App.scss';
 
 const App: React.FC = () => {
+
     const iconRef = useRef<SVGSVGElement>(null);
+    
     const handleClick = useCallback(() => {
         console.log("Clicked!!!");
-        
+
     }, []);
+
     return (
         <div className={styles.root}>
             <h1>Welcome {new Date().toString()} 2025</h1>
