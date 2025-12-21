@@ -29,6 +29,7 @@
     "paths": {
       "@vk/react-ui-kit/*": ["packages/react-ui-kit/*"],
       "@vk/icons/*": ["packages/icons/*"],
+      "@vk/common-utils/*": ["packages/common-utils/*"],
       //"@vk/react-ui-kit/*": ["packages/react-ui-kit/*"],
     }
     /* Completeness */

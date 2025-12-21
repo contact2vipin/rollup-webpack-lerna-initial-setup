@@ -4,21 +4,22 @@ import { ButtonType } from './constant';
 import styles from './Button.scss';
 
 interface IProps {
-    onClick: () => void;
-    type: ButtonType;
+  onClick: () => void;
+  type: ButtonType;
+  value?: string;
 }
 
-const Button:React.FC<IProps> = ({onClick, type=ButtonType.PRIMARY}) => {
-    const ctx = classnames({
-        [styles.button]: true,
-        [styles.primary]: type === ButtonType.PRIMARY,
-        [styles.secondary]: type === ButtonType.SECONDARY,
-    })
+const Button: React.FC<IProps> = ({ onClick, value = 'save', type = ButtonType.PRIMARY }) => {
+  const ctx = classnames({
+    [styles.button]: true,
+    [styles.primary]: type === ButtonType.PRIMARY,
+    [styles.secondary]: type === ButtonType.SECONDARY,
+  })
   return (
     <button className={ctx} onClick={onClick}>
-        Click me
+      {value}
     </button>
   );
 }
 
-export {Button};
+export { Button };

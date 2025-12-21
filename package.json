@@ -9,7 +9,8 @@
     "build": "lerna run build --stream",
     "build:deps": "yarn build --ignore=\"@vk/web-*\"",
     "build:apps": "lerna run build --stream --scope=\"@vk/web-*\"",
-    "start:wem": "cd ./apps/web-enquiry-mgmt && yarn start"
+    "start:wem": "cd ./apps/web-enquiry-mgmt && yarn start",
+    "start:wep": "cd ./apps/web-ecom-proj && yarn start"
   },
   "workspaces": {
     "packages": [

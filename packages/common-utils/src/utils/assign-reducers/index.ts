@@ -1,0 +1,1 @@
+export { assignReducers } from './assignReducers';

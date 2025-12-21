@@ -1,0 +1,26 @@
+.root {
+    background-color: orange;
+    height: 10rem;
+
+    .cart {
+        float: right;
+        margin: 3rem;
+        position: relative;
+
+        svg {
+            width: 3rem
+        }
+
+        span {
+            background-color: green;
+            border-radius: 50%;
+            height: 1.5rem;
+            width: 1.5rem;
+            position: absolute;
+            top: -1rem;
+            right: 0;
+            color: white;
+            text-align: center;
+        }
+    }
+}

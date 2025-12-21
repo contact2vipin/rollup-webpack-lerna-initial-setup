@@ -6,4 +6,5 @@ export const ifProd = pickIf.bind(null, process.env.NODE_ENV === 'production');
 export const appPaths = {
     "WAP": "/",
     "WEM": "/enquiry-mgmt",
+    "WEP": "/ecom-proj",
 };
