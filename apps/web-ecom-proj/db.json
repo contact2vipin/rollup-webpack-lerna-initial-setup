@@ -1,0 +1,64 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Tomato Basil Soup",
+            "price": 3.49,
+            "brand": "alcatel"
+        },
+        {
+            "id": 2,
+            "name": "Pasta Portion Control Measure",
+            "price": 9.99,
+            "brand": "Celkon"
+        },
+        {
+            "id": 3,
+            "name": "LED Table Lamp",
+            "price": 29.99,
+            "brand": "Philips"
+        },
+        {
+            "id": 4,
+            "name": "Dog Training Collar",
+            "price": 39.99,
+            "brand": "Samsung"
+        },
+        {
+            "id": 5,
+            "name": "Smart Air Purifier",
+            "price": 199.99,
+            "brand": "Coolpad"
+        },
+        {
+            "id": 6,
+            "name": "Tomato Basil Pasta Sauce",
+            "price": 3.99,
+            "brand": "Lava"
+        },
+        {
+            "id": 7,
+            "name": "Bluetooth Tracker",
+            "price": 19.99,
+            "brand": "Panasonic"
+        },
+        {
+            "id": 8,
+            "name": "Raspberry Tart",
+            "price": 5.49,
+            "brand": "Gionee"
+        },
+        {
+            "id": 9,
+            "name": "Herbal Tea Set",
+            "price": 19.99,
+            "brand": "Samsung"
+        },
+        {
+            "id": 10,
+            "name": "Mechanical Pencil Set",
+            "price": 19.99,
+            "brand": "Oppo"
+        }
+    ]
+}

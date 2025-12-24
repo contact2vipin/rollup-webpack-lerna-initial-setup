@@ -21,15 +21,6 @@ const emptyCart = (data?: any) => {
     };
 };
 
-const productList = (data?: any) => {
-    const data1 = 'product is here';
-    console.log(data);
-    console.log(data1);
-    
-    return {
-        type: constants.GET_PRODUCT_LIST,
-        payload: data1,
-    };
-};
 
-export { addToCart, removeFromCart, emptyCart, productList };
+
+export { addToCart, removeFromCart, emptyCart };

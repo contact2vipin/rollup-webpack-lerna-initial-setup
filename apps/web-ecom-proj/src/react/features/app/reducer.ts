@@ -3,8 +3,7 @@ import { constants } from "./constants";
 import { IAppState } from "./typings";
 
 const initialState: IAppState = {
-    productsInCart: [],
-    products: [],
+    productsInCart: []
 };
 
 const cartData = (state = initialState, action: IActionWithPayload) => {

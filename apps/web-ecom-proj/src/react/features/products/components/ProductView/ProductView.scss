@@ -1,0 +1,35 @@
+.root {
+
+    color: black;
+    font-weight: 600;
+    margin: 1rem;
+    grid-gap: 1rem;
+
+    .product-list {
+        display: flex;
+        grid-gap: 1rem;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+
+        .product-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1rem;
+            width: 10rem;
+            box-shadow: 0 0 .1rem .1rem #ddd;
+            border-radius: .5rem;
+
+            .product-details {
+                color: inherit
+            }
+
+            .actions {
+                display: flex;
+                margin-top: 1rem;
+            }
+        }
+
+
+    }
+}

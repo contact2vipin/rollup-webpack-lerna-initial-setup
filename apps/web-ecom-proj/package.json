@@ -18,9 +18,9 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
+    "@vk/common-utils": "^1.0.0",
     "@vk/icons": "^1.0.0",
     "@vk/react-ui-kit": "^1.0.0",
-    "@vk/common-utils": "^1.0.0",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-redux": "^9.2.0",
@@ -28,6 +28,8 @@
     "redux-saga": "^1.4.2"
   },
   "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-redux": "^7.1.34",
     "cross-env": "^10.1.0"
   }
 }
